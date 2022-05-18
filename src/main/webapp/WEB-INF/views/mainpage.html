@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Quiz Game Project</title>
-  <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+  <meta charset="UTF-8">
+  <title>Quizarius</title>
+  <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     /* CSS goes here, at the top of the page */
     .normal-wrapper {
@@ -18,31 +15,26 @@
       overflow: auto;
     }
     #first-splash {
-      width: 50%;
-      height: 1px;
+      width: 20%;
+      height: 2px;
       background: #000000;
-      margin: 30px 0 0 0;
-    }
-    #second-splash {
-      width: 50%;
-      height: 1px;
-      background: #000000;
-      margin: 30px 0 0 0;
+      margin: 150px 0 0 320px;
+
     }
 
-    #email {
+    #start {
       float: bottom;
-      margin: 250px 0 0 270px;
+      margin: 50px 0 0 350px;
     }
 
-    #pass {
+    #shop {
       float: bottom;
-      margin: 10px 0 0 270px;
+      margin: 50px 0 0 350px;
     }
-    #forgot {
+    #statistic {
       float: bottom;
-      margin: 30px 0 0 270px;
-      color: #eb6361;
+      margin: 50px 0 0 350px;
+      color: #EB6361;
     }
 
     h1 {
@@ -58,63 +50,32 @@
       font-size: 16pt;
     }
 
-    #navbar li {
-      display: inline; /* make items horizontal */
-    }
-
-    #navbar li a:link,
-    #navbar li a:visited,
-    #navbar li a:active {
-      text-decoration: none; /* remove underline */
-      color: #000000;
-      padding: 0 16px 0 10px; /* space links apart */
-      margin: 0;
-      border-right: 2px solid #b4b4b4; /* divider */
-    }
-
-    #navbar li a:link.last-link {
-      /* remove divider */
-      border-right: 0px;
-    }
-
-    #navbar li a:hover {
-      /* change color on hover (mouseover) */
-      color: #eb6361;
-    }
   </style>
 </head>
 <body>
 <div class="normal-wrapper">
   <div id="logo-container">
-    <h1>Registration</h1>
-    <ul id="navbar">
-      <li>
-        <a href="https://project-quizgame-mainpage.glitch.me">Login</a>
-      </li>
-      <li><a href="" class="last-link">Sign-up</a></li>
-    </ul>
+    <h1>Quizarius</h1>
   </div>
-  <div id="email">
-    <h4>Email address</h4>
+  <div id="first-splash"></div>
 
-    <form>
-      <input type="text" placeholder="" />
-    </form>
+  <div id="start">
+
+    <a href=""><h4>START GAME</h4></a>
+
   </div>
-  <div id="pass">
-    <h4>Password</h4>
-    <form>
-      <input type="text" placeholder="" />
-    </form>
+  <div id="shop">
+    <a href=""><h4>SHOP</h4></a>
+
+
   </div>
-  <div id="forgot">
-    <a href="">Forgot password?</a>
+  <div id="statistic">
+    <a href=""><h4>STATISTIC</h4></a>
+
   </div>
+
 </div>
-<script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
-        type="text/javascript"
-></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
   /* JavaScript goes here, at the bottom of the page */
 </script>
