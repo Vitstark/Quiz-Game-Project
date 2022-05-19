@@ -1,4 +1,4 @@
-package ru.quizgameproject;
+package ru.quizgameproject.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,5 +14,6 @@ public class WebController {
     public String getMainPage() {
         return "mainpage";
     }
+
 
 }
