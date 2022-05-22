@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Quiz Game Project</title>
-  <link rel="stylesheet" type="text/css"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <style>
     /* CSS goes here, at the top of the page */
     .normal-wrapper {
@@ -19,7 +22,6 @@
       height: 1px;
       background: #000000;
       margin: 30px 0 0 0;
-
     }
     #second-splash {
       width: 50%;
@@ -30,18 +32,9 @@
 
     #email {
       float: bottom;
-      margin: 250px 0 0 270px;
+      margin: 190px 0 0 330px;
     }
 
-    #pass  {
-      float: bottom;
-      margin: 10px 0 0 270px;
-    }
-    #forgot {
-      float: bottom;
-      margin: 30px 0 0 270px;
-      color: #EB6361;
-    }
 
     h1 {
       float: left;
@@ -50,23 +43,15 @@
 
     #navbar {
       list-style-type: none; /* remove bullet points */
-      margin: 50px 0 0 330px;
+      margin: 50px 0 0 370px;
       float: left;
       padding-left: 1%;
       font-size: 16pt;
     }
 
-    #navbar li {
-      display: inline; /* make items horizontal */
-    }
 
-    #navbar li a:link, #navbar li a:visited, #navbar li a:active {
-      text-decoration: none; /* remove underline */
-      color: #000000;
-      padding: 0 16px 0 10px; /* space links apart */
-      margin: 0;
-      border-right: 2px solid #B4B4B4; /* divider */
-    }
+
+
 
     #navbar li a:link.last-link {
       /* remove divider */
@@ -75,39 +60,38 @@
 
     #navbar li a:hover {
       /* change color on hover (mouseover) */
-      color: #EB6361;
+      color: #eb6361;
     }
-
   </style>
 </head>
 <body>
 <div class="normal-wrapper">
   <div id="logo-container">
     <h1>Registration</h1>
-    <ul id="navbar">
-      <li><a href="/mainpage">Login</a></li>
-      <li><a href="" class="last-link">Sign-up</a></li>
-    </ul>
+
   </div>
   <div id="email">
-    <h4>Email address</h4>
+    <h4>Username</h4>
 
-    <form>
-      <input type="text" placeholder="" />
-    </form>
-
-  </div>
-  <div id="pass">
-    <h4>Password</h4>
-    <form>
-      <input type="text" placeholder="" />
+    <!--/*@thymesVar id="name" type=""*/-->
+    <form method="post" action="/login">
+      <input type="text" placeholder="" id="name"/>
     </form>
   </div>
-  <div id="forgot">
-    <a href="">Forgot password?</a>
-  </div>
+  <ul id="navbar">
+    <li>
+      <a href="https://project-quizgame-mainpage.glitch.me">Login</a>
+    </li>
+  </ul>
+  <p></p>
 
 </div>
-
+<script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+        type="text/javascript"
+></script>
+<script type="text/javascript">
+  /* JavaScript goes here, at the bottom of the page */
+</script>
 </body>
 </html>
