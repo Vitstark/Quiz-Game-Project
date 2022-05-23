@@ -1,4 +1,3 @@
-/*
 package ru.quizgameproject.controllers;
 
 import org.springframework.stereotype.Controller;
@@ -11,19 +10,30 @@ public class WebController {
     @GetMapping("/login")
     public String getLoginPage(@RequestParam(value = "name", required = false) String name,
                                Model model) {
-        model.addAttribute("mesage", "HI " + name);
 
         return "login";
     }
 
 
+    @GetMapping("/choosingTopick")
+    public String getChoosingPage(){
+
+        return "html2/HTMLPage2.html";
+
+    }
+
+    @GetMapping("/game")
+    public String getGamePage(){
+
+        return "html2/HTMLPage3.html";
+
+    }
 
 
-    @GetMapping("/mainpage")
+    @GetMapping("/mainPage")
     public String getMainPage() {
-        return "mainpage";
+        return "html2/HTMLpage1.html";
     }
 
 
 }
-*/
