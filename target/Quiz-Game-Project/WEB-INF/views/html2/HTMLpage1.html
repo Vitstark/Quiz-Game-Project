@@ -1,36 +1,296 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
-    <meta charset="utf-8" />
-    <title></title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link href="css2/normalize.css" rel="stylesheet" />
-    <link href="css2/style2.css" rel="stylesheet" />
+    <meta charset="utf-8"/>
+    <title>Quiz Game Project</title>
+    <link
+            rel="stylesheet"
+            type="text/css"
+    />
     <style>
         body {
-            background: url(image/background.jpg) no-repeat;
+            background: url(https://cdn.glitch.global/eecd850a-6d35-489f-8b22-d08d8dd26054/background.jpg?v=1653144900420) no-repeat;
             background-size: cover;
             background-position: center center;
+        }
+
+        .textTitle {
+            position: fixed;
+            width: 1156px;
+            height: 244px;
+            left: 480px;
+
+            font-family: 'Montserrat Subrayada', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 244px;
+            color: #000000;
+        }
+
+        .button1 {
+            padding-top: 330px;
+            padding-left: 630px;
+        }
+
+        .button2 {
+            padding-top: 50px;
+            padding-left: 630px;
+        }
+
+        .button3 {
+            padding-top: 50px;
+            padding-left: 630px;
+        }
+
+        html {
+            line-height: 1.15; /* 1 */
+            -webkit-text-size-adjust: 100%; /* 2 */
+        }
+
+        body {
+            margin: 0;
+        }
+
+        main {
+            display: block;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+
+        hr {
+            box-sizing: content-box; /* 1 */
+            height: 0; /* 1 */
+            overflow: visible; /* 2 */
+        }
+
+        pre {
+            font-family: monospace, monospace; /* 1 */
+            font-size: 1em; /* 2 */
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        abbr[title] {
+            border-bottom: none; /* 1 */
+            text-decoration: underline; /* 2 */
+            text-decoration: underline dotted; /* 2 */
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        code,
+        kbd,
+        samp {
+            font-family: monospace, monospace; /* 1 */
+            font-size: 1em; /* 2 */
+        }
+
+        small {
+            font-size: 80%;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        img {
+            border-style: none;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit; /* 1 */
+            font-size: 100%; /* 1 */
+            line-height: 1.15; /* 1 */
+            margin: 0; /* 2 */
+        }
+
+        button,
+        input { /* 1 */
+            overflow: visible;
+        }
+
+        button,
+        select { /* 1 */
+            text-transform: none;
+        }
+
+        button,
+        [type="button"],
+        [type="reset"],
+        [type="submit"] {
+            -webkit-appearance: button;
+        }
+
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0;
+        }
+
+        button:-moz-focusring,
+        [type="button"]:-moz-focusring,
+        [type="reset"]:-moz-focusring,
+        [type="submit"]:-moz-focusring {
+            outline: 1px dotted ButtonText;
+        }
+
+        fieldset {
+            padding: 0.35em 0.75em 0.625em;
+        }
+
+        legend {
+            box-sizing: border-box; /* 1 */
+            color: inherit; /* 2 */
+            display: table; /* 1 */
+            max-width: 100%; /* 1 */
+            padding: 0; /* 3 */
+            white-space: normal; /* 1 */
+        }
+
+        progress {
+            vertical-align: baseline;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+        [type="checkbox"],
+        [type="radio"] {
+            box-sizing: border-box; /* 1 */
+            padding: 0; /* 2 */
+        }
+
+
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        [type="search"] {
+            -webkit-appearance: textfield; /* 1 */
+            outline-offset: -2px; /* 2 */
+        }
+
+        [type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button; /* 1 */
+            font: inherit; /* 2 */
+        }
+
+        details {
+            display: block;
+        }
+
+        summary {
+            display: list-item;
+        }
+
+        template {
+            display: none;
+        }
+
+        [hidden] {
+            display: none;
+        }
+
+        .csw-btn-button {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 34px;
+            color: #ffffff !important;
+            border-radius: 5px;
+            background: #F74B22;
+            border: 1px solid #F74B22;
+            transition: 0.4s;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .csw-btn-button:hover {
+            background: #292929;
+        }
+
+        .csw-btn-button1 {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 37px;
+            color: #ffffff !important;
+            border-radius: 5px;
+            background: #F74B22;
+            border: 1px solid #F74B22;
+            transition: 0.4s;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .csw-btn-button1:hover {
+            background: #292929;
+        }
+
+        .csw-btn-button2 {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            color: #ffffff !important;
+            border-radius: 5px;
+            background: #F74B22;
+            border: 1px solid #F74B22;
+            transition: 0.4s;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .csw-btn-button2:hover {
+            background: #292929;
         }
     </style>
 </head>
 <body style="background-attachment:fixed" topmargin="0">
-    <div class="page">
-        <div>
-            <h1 class="textTitle">Quizarius</h1>
-        </div>
-
-        <div class="button1">
-            <button class="btn1" href="">START</button>
-        </div>
-
-        <div class="button2">
-            <button class="btn2" href="">SHOP</button>
-        </div>
-
-        <div class="button3">
-            <button class="btn3" href="">STATISTIC</button>
-        </div>
+<div class="page">
+    <div>
+        <h1 class="textTitle">Quizarius</h1>
     </div>
+
+    <div class="button1">
+        <a href="/Quiz_Game_Project_war_exploded/choosingTopick" class="csw-btn-button" rel="nofollow" target="_blank">START</a>
+    </div>
+
+    <div class="button2">
+        <a href="" class="csw-btn-button1" rel="nofollow" target="_blank">SHOP</a>
+
+    </div>
+
+    <div class="button3">
+        <a href="" class="csw-btn-button2" rel="nofollow" target="_blank">STATISTIC</a>
+
+    </div>
+</div>
 </body>
 </html>

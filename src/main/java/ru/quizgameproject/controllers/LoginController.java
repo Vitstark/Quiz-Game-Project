@@ -1,3 +1,4 @@
+/*
 package ru.quizgameproject.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import ru.quizgameproject.creations.User;
 import ru.quizgameproject.dao.UserDAO;
 
+*/
 /**
  * @author terenin
- */
+ *//*
+
 @Controller
 @RequestMapping("/login")
 public class LoginController {
@@ -48,8 +51,9 @@ public class LoginController {
         }
         //здесь мы будем добавлять пользователя по логину в бд если его не существует или получать пользователя по логину в бд если он сужществует
 
-        return "mainpage";
+        return "HTMLpage1";
 
     }
 
 }
+*/
