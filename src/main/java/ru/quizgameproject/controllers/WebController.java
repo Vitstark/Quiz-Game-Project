@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.*;
 import ru.quizgameproject.creations.User;
 
 @Controller
+@RequestMapping("/")
 public class WebController {
-    @GetMapping("/login")
+    @GetMapping("login")
     public String getLoginPage(@RequestParam(value = "name", required = false) String name,
                                Model model) {
 
@@ -15,24 +16,25 @@ public class WebController {
     }
 
 
-    @GetMapping("/choosingTopick")
+    @GetMapping("topick_choosing")
     public String getChoosingPage(){
 
-        return "html2/HTMLPage2.html";
+        return "topic_choosing";
 
     }
 
-    @GetMapping("/game")
+    @GetMapping("answer_choosing")
     public String getGamePage(){
 
-        return "html2/HTMLPage3.html";
+        return "answer_choosing";
 
     }
 
 
-    @GetMapping("/mainPage")
+
+    @GetMapping("main")
     public String getMainPage() {
-        return "html2/HTMLpage1.html";
+        return "main";
     }
 
 
