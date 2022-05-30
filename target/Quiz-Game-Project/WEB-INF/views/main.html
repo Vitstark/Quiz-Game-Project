@@ -1,4 +1,4 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="utf-8"/>
     <title>Quiz Game Project</title>
@@ -7,33 +7,43 @@
             type="text/css"
     />
     <style>
+
+        @font-face {
+            font-family: Jellee;
+            src: url("sources/fonts/Jellee-Roman.otf");
+        }
+
         body {
-            background: url(https://cdn.glitch.global/eecd850a-6d35-489f-8b22-d08d8dd26054/background.jpg?v=1653144900420) no-repeat;
+            background: url("sources/image/background.jpg") no-repeat;
             background-size: cover;
             background-position: center;
         }
 
-        .textTitle {
-            text-align: center;
+        a {
+            text-decoration: none;
+        }
 
-            font-family: 'Montserrat Subrayada', sans-serif;
+        .textTitle {
+            padding-top: 20px;
+            text-align: center;
+            font-family: Jellee;
             font-style: normal;
-            font-size: 140px;
+            font-size: 210px;
             color: #000000;
         }
 
         .button1 {
-            padding-top: 0px;
+            padding-top: 90px;
             text-align: center;
         }
 
         .button2 {
-            padding-top: 50px;
+            padding-top: 70px;
             text-align: center;
         }
 
         .button3 {
-            padding-top: 50px;
+            padding-top: 70px;
             text-align: center;
         }
 
@@ -220,14 +230,14 @@
 
         .csw-btn-button {
             cursor: pointer;
-            font-size: 40px;
-            padding: 10px 34px;
+            font-size: 28px;
+            padding: 28px 82px;
             color: #ffffff !important;
-            border-radius: 5px;
+            border-radius: 24px;
             background: #F74B22;
             border: 1px solid #F74B22;
             transition: 0.4s;
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial;
         }
 
         .csw-btn-button:hover {
@@ -236,14 +246,14 @@
 
         .csw-btn-button1 {
             cursor: pointer;
-            font-size: 42px;
-            padding: 10px 37px;
+            font-size: 28px;
+            padding: 28px 132px;
             color: #ffffff !important;
-            border-radius: 5px;
+            border-radius: 24px;
             background: #F74B22;
             border: 1px solid #F74B22;
             transition: 0.4s;
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial;
         }
 
         .csw-btn-button1:hover {
@@ -252,14 +262,14 @@
 
         .csw-btn-button2 {
             cursor: pointer;
-            font-size: 31px;
-            padding: 16px 20px;
+            font-size: 28px;
+            padding: 28px 100px;
             color: #ffffff !important;
-            border-radius: 5px;
+            border-radius: 24px;
             background: #F74B22;
             border: 1px solid #F74B22;
             transition: 0.4s;
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial;
         }
 
         .csw-btn-button2:hover {
@@ -269,22 +279,20 @@
 </head>
 <body style="background-attachment:fixed" topmargin="0">
 <div class="page">
-    <div>
-        <h1 class="textTitle">Quizarius</h1>
+    <div class="textTitle">
+        Quizarius
     </div>
 
     <div class="button1">
-        <a href="topick_choosing" class="csw-btn-button" rel="nofollow" target="_blank">START</a>
+        <a href="topick_choosing" class="csw-btn-button" rel="nofollow">START GAME</a>
     </div>
 
     <div class="button2">
-        <a href="" class="csw-btn-button1" rel="nofollow" target="_blank">SHOP</a>
-
+        <a href="" class="csw-btn-button1" rel="nofollow">SHOP</a>
     </div>
 
     <div class="button3">
-        <a href="" class="csw-btn-button2" rel="nofollow" target="_blank">STATISTIC</a>
-
+        <a href="" class="csw-btn-button2" rel="nofollow">STATISTIC</a>
     </div>
 </div>
 </body>

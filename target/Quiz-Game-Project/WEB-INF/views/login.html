@@ -1,89 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Quiz Game Project</title>
-  <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <style>
-    /* CSS goes here, at the top of the page */
-    .normal-wrapper {
-      width: 900px;
-      margin: 0 auto;
-      padding: 15px 40px;
-      background: white;
-      overflow: auto;
-    }
-    #first-splash {
-      width: 50%;
-      height: 1px;
-      background: #000000;
-      margin: 30px 0 0 0;
-    }
-    #second-splash {
-      width: 50%;
-      height: 1px;
-      background: #000000;
-      margin: 30px 0 0 0;
-    }
+    <meta charset="UTF-8"/>
+    <title>Quiz Game Project</title>
+    <link
+            rel="stylesheet"
+            type="text/css"
+    />
+    <style>
 
-    #email {
-      float: bottom;
-      margin: 190px 0 0 330px;
-    }
+        @font-face {
+            font-family: Jellee;
+            src: url("sources/fonts/Jellee-Roman.otf");
+        }
 
+        a {
+            text-decoration: none;
+        }
 
-    h1 {
-      float: left;
-      margin: 100px 0 0 340px;
-    }
+        body {
+            background: url("sources/image/background.jpg") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
 
-    #navbar {
-      list-style-type: none; /* remove bullet points */
-      margin: 50px 0 0 370px;
-      float: left;
-      padding-left: 1%;
-      font-size: 16pt;
-    }
+        .textTitle {
+            text-align: center;
+            font-family: Jellee;
+            font-style: normal;
+            font-size: 140px;
+            color: #000000;
+        }
 
+        form {
+            color: #c7c5c2;
+            width: 500px;
+            height: 120px;
+            background: #ffffff;
+            margin: 0 auto;
+            border-radius: 30px;
+        }
 
+        input[type=text] {
+            padding: 20px;
+            margin: 10px 0;
+            width: 95%;
+            box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+            border-radius: 10px;
 
+        }
 
 
-    #navbar li a:link.last-link {
-      /* remove divider */
-      border-right: 0px;
-    }
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
 
-    #navbar li a:hover {
-      /* change color on hover (mouseover) */
-      color: #eb6361;
-    }
-  </style>
+        #loginbutton {
+            text-align: center;
+            list-style-type: none; /* remove bullet points */
+            margin: 50px 0 0 0px;
+            float: left;
+            font-size: 16pt;
+        }
+
+
+    </style>
 </head>
-<body>
-<div class="normal-wrapper">
-  <div id="logo-container">
-    <h1>Registration</h1>
-
-  </div>
-  <div id="email">
-    <h4>Username</h4>
-
-    <!--/*@thymesVar id="name" type=""*/-->
-    <form method="post" action="/login">
-      <input type="text" placeholder="" id="name"/>
-    </form>
-  </div>
-  <ul id="navbar">
-    <li>
-      <a href="main">Login</a>
-    </li>
-  </ul>
-  <p></p>
+<body style="background-attachment:fixed" topmargin="0">
+<div class="page">
+    <div><h1 class="textTitle">Login</h1></div>
+    <div>
+        <form>
+            <input type="text" placeholder="Please, enter a password"/>
+        </form>
+        <ul id="loginbutton">
+            <li>
+                <a href="main">Login</a>
+            </li>
+        </ul>
+    </div>
 
 </div>
 <script
@@ -91,7 +87,7 @@
         type="text/javascript"
 ></script>
 <script type="text/javascript">
-  /* JavaScript goes here, at the bottom of the page */
+    /* JavaScript goes here, at the bottom of the page */
 </script>
 </body>
 </html>
