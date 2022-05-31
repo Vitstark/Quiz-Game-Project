@@ -1,14 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link href="css2/normalize.css" rel="stylesheet"/>
-    <link href="css3/style3.css" rel="stylesheet"/>
-    <meta charset="utf-8"/>
-    <title>Quiz Game Project</title>
-    <link
-            rel="stylesheet"
-            type="text/css"
-    />
+    <title></title>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="sources/css2/normalize.css" rel="stylesheet" />
+    <link href="cssStatistic/style0.css" rel="stylesheet" />
     <style>
+
         @font-face {
             font-family: Jellee;
             src: url("sources/fonts/Jellee-Roman.otf");
@@ -18,97 +17,11 @@
             background-size: cover;
             background-position: center center;
         }
-
         body {
             font-family: 'Montserrat', sans-serif;
         }
 
-        .wrapper {
-            padding-left: 30px;
-            padding-top: 40px;
 
-        }
-
-        .navigation {
-            display: flex;
-            font-weight: 700; /*ðàçìåð æèðíîñòè òåêñòà*/
-
-        }
-
-        .nav {
-            padding-top: 12px;
-            padding-left: 0px;
-            text-align: left;
-        }
-
-
-        .button1 {
-            text-align: center;
-        }
-
-        .btn1 {
-            color: black;
-            text-decoration: none; /*óáèðàåò ïîä÷åðêèâàíèå*/
-            font-size: 25px;
-            font-weight: 700;
-            text-transform: uppercase;
-            background: aliceblue;
-            padding: 3rem 9rem;
-            margin-bottom: 1rem;
-            border: none;
-            font-family: 'Montserrat', sans-serif;
-            border-radius: 10px;
-        }
-
-        .button2 {
-            text-align: center;
-        }
-
-        .btn2 {
-            color: black;
-            text-decoration: none; /*óáèðàåò ïîä÷åðêèâàíèå*/
-            font-size: 25px;
-            font-weight: 700;
-            background: aliceblue;
-            padding: 1rem 11rem;
-
-            border: none;
-            font-family: 'Montserrat', sans-serif;
-            border-radius: 10px;
-        }
-
-        .form-group-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: 200;
-            margin-top: 2em;
-            margin-bottom: 2em;
-            background-size: cover;
-            background-position: center center;
-        }
-
-        label {
-            cursor: pointer;
-        }
-
-        .button3 {
-            padding-top: 20px;
-            text-align: center;
-        }
-
-        .btn3 {
-            color: #ffffff;
-            text-decoration: none; /*óáèðàåò ïîä÷åðêèâàíèå*/
-            font-size: 15px;
-            font-weight: 700;
-            text-transform: uppercase;
-            background: #F74B22;
-            padding: 1rem 5rem;
-            margin-bottom: 1rem;
-            border: none;
-            border-radius: 20px;
-            font-family: 'Montserrat', sans-serif;
-        }
 
         html {
             line-height: 1.15; /* 1 */
@@ -138,6 +51,7 @@
             font-family: monospace, monospace; /* 1 */
             font-size: 1em; /* 2 */
         }
+
 
         a {
             background-color: transparent;
@@ -249,11 +163,13 @@
             overflow: auto;
         }
 
+
         [type="checkbox"],
         [type="radio"] {
             box-sizing: border-box; /* 1 */
             padding: 0; /* 2 */
         }
+
 
         [type="number"]::-webkit-inner-spin-button,
         [type="number"]::-webkit-outer-spin-button {
@@ -268,6 +184,7 @@
         [type="search"]::-webkit-search-decoration {
             -webkit-appearance: none;
         }
+
 
         ::-webkit-file-upload-button {
             -webkit-appearance: button; /* 1 */
@@ -290,16 +207,76 @@
             display: none;
         }
 
+        .wrapper {
+            padding-left: 30px;
+            padding-top: 40px;
+        }
+
+        .navigation {
+            display: flex;
+            font-weight: 700;
+        }
+
+        .title {
+            padding-left: 630px;
+            color: black;
+            text-decoration: none;
+            font-size: 45px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .line{
+            padding-left:590px;
+            padding-bottom: 30px;
+        }
+        .nav {
+            padding-top: 12px;
+        }
+
+
+        .block1 {
+            list-style-type: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            padding-left: 330px;
+        }
+
+        .block2 {
+            list-style-type: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            padding-left: 250px;
+        }
+
+        .underline {
+            border-bottom: 1px solid currentColor;
+            padding-bottom:15px;
+
+        }
+
+        .text {
+            padding-bottom: 20px;
+        }
+
+        .block {
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 50px;
+        }
+
+
     </style>
 </head>
-
 <body style="background-attachment:fixed" topmargin="0">
 <div class="header">
     <div class="wrapper">
         <div class="navigation">
             <a href="main">
-                <img src="https://cdn.glitch.global/2fe8bc96-1cc7-4d96-b37b-351c1da0f220/chevron-left.png?v=1653145656164"
-                     alt="chevron"/>
+                <img src="https://cdn.glitch.global/2fe8bc96-1cc7-4d96-b37b-351c1da0f220/chevron-left.png?v=1653145656164" alt="chevron" />
+
             </a>
             <p class="nav">Main Menu</p>
         </div>
@@ -307,37 +284,54 @@
 </div>
 
 <div>
-    <div class="button1">
-        <button class="btn1" href="">What are u doing?</button>
-    </div>
+    <h1 class="title">Статистика:</h1>
+    <img class="line" src="https://cdn.glitch.global/2fe8bc96-1cc7-4d96-b37b-351c1da0f220/Line.png?v=1653904368315" alt="line" />
+</div>
 
-    <div class="button2">
-        <button class="btn2" href="">
-            <div class="form-group-title">
-                <label>
-                    <input type="radio" name="category" value="sleeping"/> I'm sleeping
-                </label>
-            </div>
 
-            <div class="form-group-title">
-                <label>
-                    <input type="radio" name="category" value="playing"/> I'm playing football
-                </label>
-            </div>
 
-            <div class="form-group-title">
-                <label>
-                    <input type="radio" name="category" value="nothing"/> nothing
-                </label>
-            </div>
-        </button>
-    </div>
+<div class="box">
+    <div class="block">
+        <ul class="block1">
+            <p class="text">
+                <span class="underline">Правильных ответов: </span>
 
-    <div class="button3">
-        <a href="">
-            <button class="btn3" href="">Send</button>
-        </a>
+            </p>
+            <p class="text">
+                <span class="underline">Неправильных ответов:</span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Всего вопросов: </span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Тема, где отвечали лушче всего:</span>
+
+            </p>
+        </ul>
+
+        <ul class="block2">
+            <p class="text">
+                <span class="underline">Тема, где отвечали хуже всего:</span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Самый быстрый ответ:</span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Самый медленный ответ:</span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Время в игре:</span>
+
+            </p>
+        </ul>
     </div>
 </div>
+
+
 </body>
 </html>
