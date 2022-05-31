@@ -5,6 +5,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@700&display=swap"
           rel="stylesheet">
     <style>
+
+        @font-face {
+            font-family: Jellee;
+            src: url("sources/fonts/Jellee-Roman.otf");
+        }
+
         body {
             background: url(https://cdn.glitch.global/eecd850a-6d35-489f-8b22-d08d8dd26054/background.jpg?v=1653144900420) no-repeat;
             background-size: cover;
@@ -325,26 +331,37 @@
             padding-bottom: 50px;
         }
 
-        .btn {
-            color: #ffffff;
-            text-decoration: none; /*óáèðàåò ïîä÷åðêèâàíèå*/
-            font-size: 15px;
-            font-weight: 400;
-            text-transform: uppercase;
-            background: #F74B22;
-            padding: 1rem 5.5rem;
-            margin-bottom: 1rem;
-            border: none;
-            border-radius: 30px;
-        }
-
         .button {
-            padding-left: 930px;
+            padding-top: 90px;
+
+            text-align: center;
         }
 
         label {
             cursor: pointer;
         }
+
+        .csw-btn-button {
+            cursor: pointer;
+            font-size: 28px;
+            padding: 28px 82px;
+            color: #ffffff !important;
+            border-radius: 24px;
+            background: #F74B22;
+            border: 1px solid #F74B22;
+            transition: 0.4s;
+            font-family: Arial;
+        }
+
+        .csw-btn-button:hover {
+            background: #292929;
+        }
+        a {
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+
 
 
     </style>
@@ -433,9 +450,7 @@
 
 
     <div class="button">
-        <button class="btn">
-            <a href="answer_choosing" class="csw-btn-button" rel="nofollow">START</a>
-        </button>
+        <a href="answer_choosing" class="csw-btn-button" rel="nofollow">START</a>
     </div>
 </div>
 
