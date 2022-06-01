@@ -1,8 +1,7 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
-    <link href="css2/normalize.css" rel="stylesheet"/>
-    <link href="css3/style3.css" rel="stylesheet"/>
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8">
     <title>Quiz Game Project</title>
     <link
             rel="stylesheet"
@@ -13,6 +12,7 @@
             font-family: Jellee;
             src: url("sources/fonts/Jellee-Roman.otf");
         }
+
         body {
             background: url(https://cdn.glitch.global/eecd850a-6d35-489f-8b22-d08d8dd26054/background.jpg?v=1653144900420) no-repeat;
             background-size: cover;
@@ -308,7 +308,7 @@
 
 <div>
     <div class="button1">
-        <button class="btn1" href="">What are u doing?</button>
+        <p th:text="${body_of_question}">question</p>
     </div>
 
     <div class="button2">
@@ -327,7 +327,7 @@
 
             <div class="form-group-title">
                 <label>
-                    <input type="radio" name="category" value="nothing"/> nothing
+                    <input type="radio" name="category" value="играю"/> играю
                 </label>
             </div>
         </button>

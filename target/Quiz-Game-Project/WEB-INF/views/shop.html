@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
+    <link href="css2/normalize.css" rel="stylesheet" />
+    <link href="css3/style3.css" rel="stylesheet" />
+    <meta charset="utf-8" />
     <title>Quiz Game Project</title>
-    <link
-            rel="stylesheet"
-            type="text/css"
-    />
+    <link rel="stylesheet"
+          type="text/css" />
     <style>
         @font-face {
             font-family: Jellee;
@@ -26,13 +25,11 @@
         .wrapper {
             padding-left: 30px;
             padding-top: 40px;
-
         }
 
         .navigation {
             display: flex;
             font-weight: 700; /*ðàçìåð æèðíîñòè òåêñòà*/
-
         }
 
         .nav {
@@ -44,12 +41,13 @@
 
         .button1 {
             text-align: center;
+            font-size: 25px;
         }
 
         .btn1 {
             color: black;
             text-decoration: none; /*óáèðàåò ïîä÷åðêèâàíèå*/
-            font-size: 25px;
+            font-size: 15px;
             font-weight: 700;
             text-transform: uppercase;
             background: aliceblue;
@@ -71,7 +69,6 @@
             font-weight: 700;
             background: aliceblue;
             padding: 1rem 11rem;
-
             border: none;
             font-family: 'Montserrat', sans-serif;
             border-radius: 10px;
@@ -213,20 +210,20 @@
             -webkit-appearance: button;
         }
 
-        button::-moz-focus-inner,
-        [type="button"]::-moz-focus-inner,
-        [type="reset"]::-moz-focus-inner,
-        [type="submit"]::-moz-focus-inner {
-            border-style: none;
-            padding: 0;
-        }
+            button::-moz-focus-inner,
+            [type="button"]::-moz-focus-inner,
+            [type="reset"]::-moz-focus-inner,
+            [type="submit"]::-moz-focus-inner {
+                border-style: none;
+                padding: 0;
+            }
 
-        button:-moz-focusring,
-        [type="button"]:-moz-focusring,
-        [type="reset"]:-moz-focusring,
-        [type="submit"]:-moz-focusring {
-            outline: 1px dotted ButtonText;
-        }
+            button:-moz-focusring,
+            [type="button"]:-moz-focusring,
+            [type="reset"]:-moz-focusring,
+            [type="submit"]:-moz-focusring {
+                outline: 1px dotted ButtonText;
+            }
 
         fieldset {
             padding: 0.35em 0.75em 0.625em;
@@ -265,9 +262,9 @@
             outline-offset: -2px; /* 2 */
         }
 
-        [type="search"]::-webkit-search-decoration {
-            -webkit-appearance: none;
-        }
+            [type="search"]::-webkit-search-decoration {
+                -webkit-appearance: none;
+            }
 
         ::-webkit-file-upload-button {
             -webkit-appearance: button; /* 1 */
@@ -289,55 +286,57 @@
         [hidden] {
             display: none;
         }
-
     </style>
 </head>
 
 <body style="background-attachment:fixed" topmargin="0">
-<div class="header">
-    <div class="wrapper">
-        <div class="navigation">
-            <a href="main">
-                <img src="https://cdn.glitch.global/2fe8bc96-1cc7-4d96-b37b-351c1da0f220/chevron-left.png?v=1653145656164"
-                     alt="chevron"/>
-            </a>
-            <p class="nav">Main Menu</p>
+    <div class="header">
+        <div class="wrapper">
+            <div class="navigation">
+                <a href="main">
+                    <img src="https://cdn.glitch.global/2fe8bc96-1cc7-4d96-b37b-351c1da0f220/chevron-left.png?v=1653145656164"
+                         alt="chevron" />
+                </a>
+                <p class="nav">Main Menu</p>
+            </div>
         </div>
     </div>
-</div>
 
-<div>
-    <div class="button1">
-        <p th:text="${body_of_question}">question</p>
+    <div>
+        <div class="button1">
+            <button class="btn1" href="">
+                Совсем скоро в магазине появится много интересного,
+                а пока, вы можете поддержать нас:
+            </button>
+        </div>
+
+        <div class="button2">
+            <button class="btn2" href="">
+                <div class="form-group-title">
+                    <label>
+                        <input type="radio" name="category" value="sleeping" /> Card
+                    </label>
+                </div>
+
+                <div class="form-group-title">
+                    <label>
+                        <input type="radio" name="category" value="playing" /> Crypto
+                    </label>
+                </div>
+
+                <div class="form-group-title">
+                    <label>
+                        <input type="radio" name="category" value="nothing" /> PayPal
+                    </label>
+                </div>
+            </button>
+        </div>
+
+        <div class="button3">
+            <a href="">
+                <button class="btn3" href="">Оплатить</button>
+            </a>
+        </div>
     </div>
-
-    <div class="button2">
-        <button class="btn2" href="">
-            <div class="form-group-title">
-                <label>
-                    <input type="radio" name="category" value="sleeping"/> I'm sleeping
-                </label>
-            </div>
-
-            <div class="form-group-title">
-                <label>
-                    <input type="radio" name="category" value="playing"/> I'm playing football
-                </label>
-            </div>
-
-            <div class="form-group-title">
-                <label>
-                    <input type="radio" name="category" value="играю"/> играю
-                </label>
-            </div>
-        </button>
-    </div>
-
-    <div class="button3">
-        <a href="">
-            <button class="btn3" href="">Send</button>
-        </a>
-    </div>
-</div>
 </body>
 </html>

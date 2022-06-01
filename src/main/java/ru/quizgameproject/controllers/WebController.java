@@ -18,11 +18,12 @@ public class WebController {
     public String getChoosingPage(){
         return "topic_choosing";
     }
-
+/*
     @GetMapping("answer_choosing")
     public String getGamePage(){
         return "answer_choosing";
     }
+ */
 
     @GetMapping("main")
     public String getMainPage() {

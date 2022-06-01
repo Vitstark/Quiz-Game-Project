@@ -1,51 +1,27 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8"/>
-    <title>Quiz Game Project</title>
-    <link
-            rel="stylesheet"
-            type="text/css"
-    />
+    <title></title>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="sources/css2/normalize.css" rel="stylesheet" />
+    <link href="cssStatistic/style0.css" rel="stylesheet" />
     <style>
 
         @font-face {
             font-family: Jellee;
             src: url("sources/fonts/Jellee-Roman.otf");
         }
-
         body {
             background: url(https://cdn.glitch.global/eecd850a-6d35-489f-8b22-d08d8dd26054/background.jpg?v=1653144900420) no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: center center;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
         }
 
-        a {
-            text-decoration: none;
-        }
 
-        .textTitle {
-            padding-top: 20px;
-            text-align: center;
-            font-family: Jellee;
-            font-style: normal;
-            font-size: 210px;
-            color: #000000;
-        }
-
-        .button1 {
-            padding-top: 90px;
-            text-align: center;
-        }
-
-        .button2 {
-            padding-top: 70px;
-            text-align: center;
-        }
-
-        .button3 {
-            padding-top: 70px;
-            text-align: center;
-        }
 
         html {
             line-height: 1.15; /* 1 */
@@ -75,6 +51,7 @@
             font-family: monospace, monospace; /* 1 */
             font-size: 1em; /* 2 */
         }
+
 
         a {
             background-color: transparent;
@@ -186,6 +163,7 @@
             overflow: auto;
         }
 
+
         [type="checkbox"],
         [type="radio"] {
             box-sizing: border-box; /* 1 */
@@ -206,6 +184,7 @@
         [type="search"]::-webkit-search-decoration {
             -webkit-appearance: none;
         }
+
 
         ::-webkit-file-upload-button {
             -webkit-appearance: button; /* 1 */
@@ -228,72 +207,131 @@
             display: none;
         }
 
-        .csw-btn-button {
-            cursor: pointer;
-            font-size: 28px;
-            padding: 28px 82px;
-            color: #ffffff !important;
-            border-radius: 24px;
-            background: #F74B22;
-            border: 1px solid #F74B22;
-            transition: 0.4s;
-            font-family: Arial;
+        .wrapper {
+            padding-left: 30px;
+            padding-top: 40px;
         }
 
-        .csw-btn-button:hover {
-            background: #292929;
+        .navigation {
+            display: flex;
+            font-weight: 700;
         }
 
-        .csw-btn-button1 {
-            cursor: pointer;
-            font-size: 28px;
-            padding: 28px 132px;
-            color: #ffffff !important;
-            border-radius: 24px;
-            background: #F74B22;
-            border: 1px solid #F74B22;
-            transition: 0.4s;
-            font-family: Arial;
+        .title {
+            padding-left: 630px;
+            color: black;
+            text-decoration: none;
+            font-size: 45px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
         }
 
-        .csw-btn-button1:hover {
-            background: #292929;
+        .line{
+            padding-left:590px;
+            padding-bottom: 30px;
+        }
+        .nav {
+            padding-top: 12px;
         }
 
-        .csw-btn-button2 {
-            cursor: pointer;
-            font-size: 28px;
-            padding: 28px 100px;
-            color: #ffffff !important;
-            border-radius: 24px;
-            background: #F74B22;
-            border: 1px solid #F74B22;
-            transition: 0.4s;
-            font-family: Arial;
+
+        .block1 {
+            list-style-type: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            padding-left: 330px;
         }
 
-        .csw-btn-button2:hover {
-            background: #292929;
+        .block2 {
+            list-style-type: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            padding-left: 250px;
         }
+
+        .underline {
+            border-bottom: 1px solid currentColor;
+            padding-bottom:15px;
+
+        }
+
+        .text {
+            padding-bottom: 20px;
+        }
+
+        .block {
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 50px;
+        }
+
+
     </style>
 </head>
 <body style="background-attachment:fixed" topmargin="0">
-<div class="page">
-    <div class="textTitle">
-        Quizarius
-    </div>
+<div class="header">
+    <div class="wrapper">
+        <div class="navigation">
+            <a href="main">
+                <img src="https://cdn.glitch.global/2fe8bc96-1cc7-4d96-b37b-351c1da0f220/chevron-left.png?v=1653145656164" alt="chevron" />
 
-    <div class="button1">
-        <a href="topick_choosing" class="csw-btn-button" rel="nofollow">START GAME</a>
-    </div>
-
-    <div class="button2">
-        <a href="" class="csw-btn-button1" rel="nofollow">SHOP</a>
-    </div>
-
-    <div class="button3">
-        <a href="" class="csw-btn-button2" rel="nofollow">STATISTIC</a>
+            </a>
+            <p class="nav">Main Menu</p>
+        </div>
     </div>
 </div>
+
+<div>
+    <h1 class="title">Статистика:</h1>
+    <img class="line" src="https://cdn.glitch.global/2fe8bc96-1cc7-4d96-b37b-351c1da0f220/Line.png?v=1653904368315" alt="line" />
+</div>
+
+
+
+<div class="box">
+    <div class="block">
+        <ul class="block1">
+            <p class="text">
+                <span class="underline">Правильных ответов: </span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Неправильных ответов:</span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Всего вопросов: </span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Тема, где отвечали лушче всего:</span>
+
+            </p>
+        </ul>
+
+        <ul class="block2">
+            <p class="text">
+                <span class="underline">Тема, где отвечали хуже всего:</span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Самый быстрый ответ:</span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Самый медленный ответ:</span>
+
+            </p>
+            <p class="text">
+                <span class="underline">Время в игре:</span>
+
+            </p>
+        </ul>
+    </div>
+</div>
+
+
 </body>
 </html>
