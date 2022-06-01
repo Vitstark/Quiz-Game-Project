@@ -23,21 +23,22 @@ public class AnswerController {
     }
 
 
-    @GetMapping
+    @GetMapping()
     public String answerChoosing(Model model) {
         Random random = new Random();
-        return answerChoosing(model, random.nextInt(1) + 1);
+        return answerChoosing(random.nextInt(1) + 1, model);
     }
 
     @GetMapping("/{themeId}")
-    public String answerChoosing(Model model, @PathVariable("themeId") int themeId) {
+    public String answerChoosing(@PathVariable("themeId") int themeId, Model model) {
         Random random = new Random();
         Question question = questionDAO
                 .getThemeQuestions(themeId)
                 .get(random.nextInt());
         String[] unCorrectQuestions = question.getUnCorrectAnswer();
         model.addAttribute("body_of_question", question.getBodyOfQuestion());
-        model.addAttribute("");
+        model.addAttribute("correct_answer", question.getCorrectAnswer());
+        return "answer_choosing";
     }
 
 }
