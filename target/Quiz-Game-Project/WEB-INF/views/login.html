@@ -21,15 +21,7 @@
         body {
             background: url("sources/image/background.jpg") no-repeat;
             background-size: cover;
-            background-position: center center;
-        }
-
-        .textTitle {
-            text-align: center;
-            font-family: Jellee;
-            font-style: normal;
-            font-size: 140px;
-            color: #000000;
+            background-position: center;
         }
 
         form {
@@ -47,7 +39,6 @@
             width: 95%;
             box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
             border-radius: 10px;
-
         }
 
 
@@ -56,12 +47,31 @@
             margin: 0.67em 0;
         }
 
-        #loginbutton {
+        .textTitle {
             text-align: center;
-            list-style-type: none; /* remove bullet points */
-            margin: 50px 0 0 0px;
-            float: left;
-            font-size: 16pt;
+            font-family: Jellee;
+            font-style: normal;
+            font-size: 140px;
+            color: #000000;
+        }
+
+        .login_button {
+            cursor: pointer;
+            text-align: center;
+            list-style-type: none;
+            font-size: 24pt;
+        }
+
+        .csw-btn-button {
+            cursor: pointer;
+            font-size: 28px;
+            padding: 28px 120px;
+            color: #ffffff !important;
+            border-radius: 24px;
+            background: #F74B22;
+            border: 1px solid #F74B22;
+            transition: 0.4s;
+            font-family: Arial;
         }
 
 
@@ -72,13 +82,12 @@
     <div><h1 class="textTitle">Login</h1></div>
     <div>
         <form>
-            <input type="text" placeholder="Please, enter a password"/>
+            <input type="text" placeholder="Please, enter a login"/>
         </form>
-        <ul id="loginbutton">
-            <li>
-                <a href="main">Login</a>
-            </li>
-        </ul>
+    </div>
+
+    <div class="login_button">
+        <a href="main" class="csw-btn-button" rel="nofollow">SIGN IN</a>
     </div>
 
 </div>
