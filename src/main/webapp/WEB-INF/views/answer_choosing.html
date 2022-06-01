@@ -315,19 +315,19 @@
         <button class="btn2" href="">
             <div class="form-group-title">
                 <label>
-                    <input type="radio" name="category" value="sleeping"/> I'm sleeping
+                    <input type="radio" name="category" value="sleeping" th:text="${answer1}"/>
                 </label>
             </div>
 
             <div class="form-group-title">
                 <label>
-                    <input type="radio" name="category" value="playing"/> I'm playing football
+                    <input type="radio" name="category" value="playing" th:text="${answer2}"/>
                 </label>
             </div>
 
             <div class="form-group-title">
                 <label>
-                    <input type="radio" name="category" value="играю"/> играю
+                    <input type="radio" name="category" value="играю" th:text="${answer3}"/>
                 </label>
             </div>
         </button>
