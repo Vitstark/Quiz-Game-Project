@@ -29,4 +29,15 @@ public class WebController {
     public String getMainPage() {
         return "main";
     }
+
+    @GetMapping("statistic")
+    public String getStatisticPage() {
+        return "statistic";
+    }
+
+    @GetMapping("shop")
+    public String getShopPage() {
+        return "shop";
+    }
+
 }

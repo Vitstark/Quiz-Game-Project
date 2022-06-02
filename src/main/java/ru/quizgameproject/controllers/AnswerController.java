@@ -33,6 +33,7 @@ public class AnswerController {
         String[] unCorrectAnswers = question.getUnCorrectAnswer();
         model.addAttribute("body_of_question", question.getBodyOfQuestion());
         String[] answersForPage = getStackOfAnswers(unCorrectAnswers);
+        answersForPage[random.nextInt(3)] = question.getCorrectAnswer();
         model.addAttribute("answer1", answersForPage[0]);
         model.addAttribute("answer2", answersForPage[1]);
         model.addAttribute("answer3", answersForPage[2]);
